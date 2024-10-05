@@ -657,7 +657,7 @@ const UserDetails = () => {
                 }}
                 okText={"Add History"}
                 closeIcon={true}
-                title={`Add Trading History for ${oneUserData.fullName}`}
+                title={`Add Trading History for ${oneUserData.userName}`}
             >
                 <div className="w-full h-max pt-6 flex flex-col gap-4">
                     <div className="w-full h-max">
@@ -710,7 +710,7 @@ const UserDetails = () => {
                 }}
                 okText={"Update"}
                 closeIcon={true}
-                title={`Edit ${oneUserData.fullName} details.`}
+                title={`Edit ${oneUserData.userName} details.`}
             >
                 <div className="w-full h-max pt-6 flex flex-col gap-4">
                     <div className="w-full h-max">
@@ -778,7 +778,7 @@ const UserDetails = () => {
                 title={"Send Email"}
             >
                 <div className="w-full h-max pt-6 flex flex-col gap-4">
-                    <p>This message will be sent to {oneUserData.fullName}</p>
+                    <p>This message will be sent to {oneUserData.userName}</p>
                     <div className="w-full h-max">
                         <input
                             type="text"
@@ -811,7 +811,7 @@ const UserDetails = () => {
                 }}
                 okText={"Proceed"}
                 closeIcon={true}
-                title={`You are about to login as ${oneUserData.fullName}.`}
+                title={`You are about to login as ${oneUserData.userName}.`}
             ></Modal>
             <Modal
                 open={deleteUser}
