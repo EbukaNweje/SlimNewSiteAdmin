@@ -9,7 +9,7 @@ import {useEffect, useState} from "react";
 const Login = () => {
 
     const getAllUserData = () => {
-        const url = "https://slim-new-site-back-end-two.vercel.app/api/alluserdata";
+        const url = "https://slimnewsitebackend.onrender.com/api/alluserdata";
         axios
             .get(url)
             .then((response) => {
@@ -50,7 +50,7 @@ const Login = () => {
             console.log(userData);
             axios
                 .post(
-                    "https://slim-new-site-back-end-two.vercel.app/api/adminlogin",
+                    "https://slimnewsitebackend.onrender.com/api/adminlogin",
                     userData
                 )
                 .then((res) => {
