@@ -20,7 +20,7 @@ const ManageWithdrawal = () => {
    };
 
     const acceptDeposit = (withdrawId) => {
-        const url = `https://slim-new-site-back-end-two.vercel.app/api/confirm-withdrawal/${withdrawId}`;
+        const url = `https://slimnewsitebackend.onrender.com/api/confirm-withdrawal/${withdrawId}`;
         axios.post(url)
             .then((response) => {
                 console.log(response.data.user._id)
@@ -34,7 +34,7 @@ const ManageWithdrawal = () => {
     };
 
     const getallDeposit = () => {
-        const url = "https://slim-new-site-back-end-two.vercel.app/api/allwithdrawal";
+        const url = "https://slimnewsitebackend.onrender.com/api/allwithdrawal";
         axios.get(url)
             .then((response) => {
                 console.log(response.data);

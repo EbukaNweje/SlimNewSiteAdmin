@@ -8,7 +8,7 @@ const ManageDeposit = () => {
     const [userData, setUserData] = useState([]);
 
     const acceptDeposit = (depositId) => {
-        const url = `https://slim-new-site-back-end-two.vercel.app/api/confirm-deposit/${depositId}`;
+        const url = `https://slimnewsitebackend.onrender.com/api/confirm-deposit/${depositId}`;
         axios.post(url)
             .then((response) => {
                 console.log(response.data.message);
@@ -21,7 +21,7 @@ const ManageDeposit = () => {
     };
 
     const getallDeposit = () => {
-        const url = "https://slim-new-site-back-end-two.vercel.app/api/alldeposit";
+        const url = "https://slimnewsitebackend.onrender.com/api/alldeposit";
         axios.get(url)
             .then((response) => {
                 console.log(response.data);
